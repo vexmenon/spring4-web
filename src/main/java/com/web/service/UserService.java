@@ -19,5 +19,9 @@ public class UserService {
 	public UserRole fetchUserById(Integer id) throws Exception{
 		return userRoleRepository.findById(id);
 	}
+	
+	public void saveUserRole(UserRole ur) throws Exception{
+		userRoleRepository.save(ur);
+	}
 
 }
